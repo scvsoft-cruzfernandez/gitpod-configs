@@ -7,3 +7,5 @@ echo alias cdq=\"cd /workspace/quizlet-web\" > $HOME/.oh-my-zsh/custom/quizlet.z
 echo cdq >> $HOME/.oh-my-zsh/custom/quizlet.zsh
 
 echo export PROMPT=\''%{$fg[white]%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'\' >> $HOME/.zshrc
+
+git config --global core.editor "vim"
