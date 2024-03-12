@@ -4,7 +4,7 @@ sudo chsh -s $(which zsh) gitpod
 echo alias gitpod=/usr/bin/gp > $HOME/.oh-my-zsh/custom/gitpod.zsh
 env
 
-if [ $GITPOD_REPO_ROOT -eq "/workspace/quizlet-web" ]; then
+if [ $GITPOD_REPO_ROOT = "/workspace/quizlet-web" ]; then
   echo alias cdq=\"cd /workspace/quizlet-web\" > $HOME/.oh-my-zsh/custom/quizlet.zsh
   echo cdq >> $HOME/.oh-my-zsh/custom/quizlet.zsh
   echo yarn dev:links >> $HOME/.oh-my-zsh/custom/quizlet.zsh
