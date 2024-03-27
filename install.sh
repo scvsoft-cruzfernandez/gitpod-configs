@@ -3,6 +3,7 @@ sudo chsh -s $(which zsh) gitpod
 
 echo alias gitpod=/usr/bin/gp > $HOME/.oh-my-zsh/custom/gitpod.zsh
 env
+echo export GIT_EDITOR=vim > $HOME/.oh-my-zsh/custom/git.zsh
 
 if [ $GITPOD_REPO_ROOT = "/workspace/quizlet-web" ]; then
   echo alias cdq=\"cd /workspace/quizlet-web\" > $HOME/.oh-my-zsh/custom/quizlet.zsh
