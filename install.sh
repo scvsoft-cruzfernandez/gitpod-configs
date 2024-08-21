@@ -18,6 +18,8 @@ git config --global core.editor "vim"
 # this one YES!
 git config --global submodule.recurse true
 
+git config unset pull.rebase
+
 # we should avoid this one, it takes forever to start gitpods, until someone fixed the docker image git version
 # brew upgrade git
 # upgraded docker image with new git
